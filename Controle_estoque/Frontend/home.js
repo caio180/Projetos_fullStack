@@ -1,2 +1,2 @@
-const cadastro = document.getElementById('cadastro')
-const login = document.getElementById('login')
+const cadastro = document.getElementById('cadastro');
+const login = document.getElementById('login');
