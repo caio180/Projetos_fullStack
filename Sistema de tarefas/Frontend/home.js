@@ -26,7 +26,7 @@ function tela_cadastro() {
     const confirmarSenha = document.getElementById('confirmarSenha').value;
 
     if(nome === '' || email === '' || senha === '' || confirmarSenha === ''){
-        alert('Os campos obrigatórios ão podem ficar fazios');
+        alert('Preencha todos os campos');
         return;
     }
     if(senha !== confirmarSenha){
