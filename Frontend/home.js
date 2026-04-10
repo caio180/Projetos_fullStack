@@ -1,15 +1,5 @@
-const tela_ini = document.getElementById('inicial')
 const tela_cadas = document.getElementById('cadastro');
 const tela_log = document.getElementById('login');
-
-function tela_inicial() {
-    tela_ini.innerHTML = `
-    
-    <h1>Bem vindo ao sistema de tarefas</h1>
-    <h2>Para continuar, faça seu cadastro ou entre com seu login.</h2>
-    `
-
-}
 
 function tela_cadastro() {
     tela_cadas.innerHTML = `
@@ -64,12 +54,6 @@ function tela_login() {
     })  
 
 }
-
-function mostrarTela_inicial (){
-    tela_ini.style.display = 'block';
-    tela_inicial();    
-
-} 
 
 function mostrarCadastro() {
         tela_cadas.style.display = 'block';
