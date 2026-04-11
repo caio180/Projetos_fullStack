@@ -8,11 +8,12 @@
 </head>
 <body>
     
-    
+  <div id="menu">
     <button onclick="mostrarCadastro()">Cadastro</button>
     <button onclick="mostrarLogin()">Login</button>
+</div>
 
-    <div id="cadastro" style="display:none;">
+    <div id="cadastro" class="oculto">
         <form id="formCadastro">
             <h2>Cadastro</h2>
 
@@ -23,9 +24,12 @@
 
             <button type="submit" id="Criar">Cadastrar-se</button> 
         </form>
+       <button onclick="mostrarLogin()">Login</button>
+       
+     
     </div>
 
-    <div id="login" style="display:none;">
+    <div id="login" class="oculto">
         <form id="formLogin">
             <h2>Login</h2>
 
@@ -33,6 +37,7 @@
             <input type="password" id="senhaLogin" placeholder="Senha"><br><br>
 
         </form>
+       <button onclick="mostrarCadastro()">Cadastro</button>     
     </div>
 
     <script src="home.js" defer></script>
