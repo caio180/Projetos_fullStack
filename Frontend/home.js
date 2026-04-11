@@ -2,19 +2,7 @@ const tela_cadas = document.getElementById('cadastro');
 const tela_log = document.getElementById('login');
 
 function tela_cadastro() {
-    tela_cadas.innerHTML = `
-    <form id='formCadastro'>
-
-        <h2>Cadastro</h2>
-
-        <input type="text" id="nome" placeholder="Nome completo" required> <br><br>
-        <input type="email" id="email" placeholder="Email" required> <br><br>
-        <input type="password" id="senha" placeholder="Senha" required minlength="6"> <br><br>
-        <input type="password" id="confirmarSenha" placeholder="Confirmar senha" required> <br><br>
-        <button type="submit" id="Criar">Cadastrar-se</button> 
-    </form>
-        
-        `
+ 
     const form = document.getElementById("formCadastro");
     form.addEventListener("submit", function(evento){
         evento.preventDefault(); 
@@ -37,14 +25,6 @@ function tela_cadastro() {
 }
 
 function tela_login() {
-    tela_log.innerHTML = `
-        <form id="formLogin">
-            <h2>Login</h2>
-            <input type="email" id="email" placeholder="Email"><br><br>
-            <input type="password" id="senha" placeholder="Senha"><br><br>
-            <button type="submit" id="Entrar">Entrar</button>
-        </form>
-    `;
     const form = document.getElementById('formLogin');
     form.addEventListener("submit", function (evento2){
        evento2.preventDefault(); 
