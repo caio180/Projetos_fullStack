@@ -1,6 +1,8 @@
 const tela_cadas = document.getElementById('cadastro');
 const tela_log = document.getElementById('login');
-const menu = document.getElementById('menu');
+const tela_ini = document.getElementById('menu');
+
+
 
 function tela_cadastro() {
     const form = document.getElementById("formCadastro");
@@ -48,16 +50,17 @@ function tela_login() {
 function mostrarCadastro() {
     tela_cadas.classList.remove('oculto');
     tela_log.classList.add('oculto');
-    menu.classList.add('oculto');
-    tela_cadastro();
+    tela_ini.classList.add('oculto');
 }
-
 
 function mostrarLogin() {
     tela_cadas.classList.add('oculto');
     tela_log.classList.remove('oculto');
-    menu.classList.add('oculto')
-    tela_login();
+    tela_ini.classList.add('oculto');
 }
 
-
+function mostrarTelaInicial(){
+    tela_ini.classList.remove('oculto');
+    tela_cadas.classList.add('oculto');
+    tela_log.classList.add('oculto');
+}
